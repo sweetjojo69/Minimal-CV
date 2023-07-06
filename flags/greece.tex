@@ -1,0 +1,35 @@
+%need new color: sky blue, for example
+\definecolor{minimal-sky}{HTML}{2175D8}
+\begin{tikzpicture}
+
+    % Clip mask
+    \clip (0, 0) circle (7);
+
+%Cross
+    % Blue
+    \fill[minimal-sky] (-7, 3.9) rectangle (-3.9, 7);
+    \fill[minimal-sky] (-7, -0.75) rectangle (-3.9, 2.35);
+    \fill[minimal-sky] (-2.35, 3.9) rectangle (0.75, 7);
+    \fill[minimal-sky] (-2.35, -0.75) rectangle (0.75, 2.35);
+    
+    % White
+    \fill[minimal-white] (-7, 2.35) rectangle (0.75, 3.9);
+    \fill[minimal-white] (-3.9, 0) rectangle (-2.35, 7);
+
+%rows
+    %blue
+    \fill[minimal-sky] (0.75, 5.45) rectangle (7, 7);
+    \fill[minimal-sky] (0.75, 2.35) rectangle (7, 3.9);
+    \fill[minimal-sky] (0.75, -0.75) rectangle (7, 0.8);
+
+    \fill[minimal-sky] (-7, -3.85) rectangle (7, -2.3);
+    \fill[minimal-sky] (-7, -7) rectangle (7, -5.4);
+
+    %white
+    \fill[minimal-white] (0.75, 3.9) rectangle (7, 5.45);
+    \fill[minimal-white] (0.75, 0.8) rectangle (7, 2.35);
+
+    \fill[minimal-white] (-7, -2.3) rectangle (7, -0.75);
+    \fill[minimal-white] (-7, -5.4) rectangle (7, -3.85);
+    
+\end{tikzpicture}
